@@ -1,60 +1,64 @@
-  :root{
-    --cotton:#ECDFCA;
-    --ink:#1A1A1A;
-    --rust:#C1440E;
-    --denim:#2E4A6B;
-    --olive:#6B7A4F;
-    --chalk:#D8D2C2;
-    --paper:#FFFFFF;
-  }
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
-  body {
-    /* Combined background images: dot grid sits on top of the linear gradient */
-    background-image: 
-      radial-gradient(circle at 1px 1px, rgba(26, 26, 26, 0.06) 1px, transparent 0),
-      linear-gradient(#ffd3c6, #aec6cf);
-    
-    /* Background sizes mapped respectively to the images above */
-    background-size: 16px 16px, auto;
-    
-    /* Prevent the dot grid or gradient from repeating if desired */
-    background-repeat: repeat, no-repeat;
-    
-    background-color: #aec6cf;
-    font-family: 'Inter', sans-serif;
-    color: var(--ink);
-    min-height: 100vh;
+ :root{
+     --cotton:#ECDFCA;
+     --ink:#1A1A1A;
+     --rust:#C1440E;
+     --denim:#2E4A6B;
+     --olive:#6B7A4F;
+     --chalk:#D8D2C2;
+     --paper:#FFFFFF;
 }
-  .mono{font-family:'IBM Plex Mono',monospace;}
-  .display{font-family:'Archivo Black',sans-serif;}
-
-  header{
-    padding:22px 28px 16px;
-    border-bottom:3px solid var(--ink);
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-  header .brand{
-    font-family:'Archivo Black',sans-serif;
-    font-size:26px;
-    letter-spacing:0.5px;
-    text-transform:uppercase;
-    color: #000000;
-  }
-
-  header .brand a{
-    text-decoration: none;
-  }
-  
-  header .brand span{color:var(--rust);}
-  header .tagline{
+ *{
+    box-sizing:border-box;
+}
+ html,body{
+    margin:0;
+    padding:0;
+}
+ body {
+    /* Combined background images: dot grid sits on top of the linear gradient */
+     background-image: radial-gradient(circle at 1px 1px, rgba(26, 26, 26, 0.06) 1px, transparent 0), linear-gradient(#ffd3c6, #aec6cf);
+    /* Background sizes mapped respectively to the images above */
+     background-size: 16px 16px, auto;
+    /* Prevent the dot grid or gradient from repeating if desired */
+     background-repeat: repeat, no-repeat;
+     background-color: #aec6cf;
+     font-family: 'Inter', sans-serif;
+     color: var(--ink);
+     min-height: 100vh;
+}
+ .mono{
     font-family:'IBM Plex Mono',monospace;
-    font-size:11px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    color:#5b5b5b;
-  }
+}
+ .display{
+    font-family:'Archivo Black',sans-serif;
+}
+ header{
+     padding:22px 28px 16px;
+     border-bottom:3px solid var(--ink);
+     display:flex;
+     align-items:baseline;
+     justify-content:space-between;
+     flex-wrap:wrap;
+     gap:10px;
+}
+ header .brand{
+     font-family:'Archivo Black',sans-serif;
+     font-size:26px;
+     letter-spacing:0.5px;
+     text-transform:uppercase;
+     color: #000000;
+}
+ header .brand a{
+     text-decoration: none;
+}
+ header .brand span{
+    color:var(--rust);
+}
+ header .tagline{
+     font-family:'IBM Plex Mono',monospace;
+     font-size:11px;
+     letter-spacing:1.5px;
+     text-transform:uppercase;
+     color:#5b5b5b;
+}
+ 
